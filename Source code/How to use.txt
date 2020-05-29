@@ -1,0 +1,25 @@
+1.Create a database name 'CasioWatch'
+2.Import kiv.sql file in to the database
+3.Put ss.php, ps.php and 11san.php three files into a same folder below C:\AppServ\www 
+4.Open ss.php, ps.php and 11san.php three files and do the below setting
+
+At the PHP code mysql_connect() put 
+"localhost" at the first place in the parentheses
+"Your PHPMyAdm username" at the second place in the parentheses
+"Your password" at the third place in the parentheses
+Put "CasioWatch" in the parentheses of @mysql_select_db())
+
+
+Example:
+if (! mysql_connect("localhost", "Joseph", "12345678"))
+	die("fail");
+
+if (! @mysql_select_db("CasioWatch"))
+	die("fail");
+
+5.Open the browser and enter http://127.0.0.1/Your folder name/11san.php
+Then you can see the database through the webpage connect with MySQLAdmin
+
+
+
+
